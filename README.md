@@ -62,7 +62,7 @@ This config is designed for [Noctalia](https://github.com/noctalia-dev/noctalia)
 
 ![Niri + Noctalia setup](assets/niri-setup.png)
 
-*Workspace view. Dual-monitor hotkeys work with Noctalia panel.*
+*Workspace with Noctalia panel. Dual-monitor hotkeys work seamlessly.*
 
 ## Requirements
 
