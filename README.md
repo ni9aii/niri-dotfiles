@@ -73,6 +73,12 @@ Then reload niri: `niri msg action load-config-file`
 - fuzzel (launcher)
 - wlsunset (night light)
 
+## Screenshot
+
+![Niri setup](assets/niri-setup.png)
+
+*Two-monitor setup with ironbar panel*
+
 ## Related Notes
 
 Full configuration history and troubleshooting: https://github.com/ni9aii/obsidian-vault/System/Niri%20-%20Рабочая%20конфигурация.md
