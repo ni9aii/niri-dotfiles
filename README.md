@@ -1,18 +1,17 @@
 # niri-dotfiles
 
-Personal configuration for Niri Wayland compositor.
-
-Personal configuration files for **Niri** Wayland compositor.
+Niri + Noctalia dotfiles for Wayland.
 
 ## Structure
 
 ```
 ├── niri/
-│   └── config.kdl    # Niri window manager configuration
+│   └── config.kdl       # Niri WM configuration
 ├── assets/
-│   └── niri-setup.png # Screenshot
-├── install.sh        # Installation script (creates symlinks)
-└── README.md         # This file
+│   └── niri-setup.png   # Setup screenshot
+├── niri-keyboard-shortcuts.md  # Full hotkeys reference
+├── install.sh           # Installation script
+└── README.md            # This file
 ```
 
 ## Installation
@@ -23,63 +22,58 @@ cd ~/dotfiles
 ./install.sh
 ```
 
-Or symlink manually:
+Manual install:
 ```bash
 mkdir -p ~/.config/niri
 ln -sf ~/dotfiles/niri/config.kdl ~/.config/niri/config.kdl
 ```
 
-Then reload niri: `niri msg action load-config-file`
+Reload config: `niri msg action load-config-file`
 
-## Features
+## Key Features
 
-### Monitor Navigation (Dual-Monitor Setup)
-| Shortcut | Action |
-|----------|--------|
-| `Mod+` (tilde) | Focus next monitor |
-| `Mod+Shift+` | Focus previous monitor |
-| `Mod+Ctrl+` | Move window to next monitor |
-| `Mod+Alt+` | Move column to next monitor |
-| `Mod+Shift+HJKL/Arrows` | Focus monitor by direction |
+### Monitor Navigation (Dual-Monitor)
+- `Mod+` (tilde) — focus next monitor
+- `Mod+Shift+` — focus previous monitor
+- `Mod+Ctrl+` — move window to next monitor
+- `Mod+Alt+` — move column to next monitor
 
 ### Keyboard Layout
-- Caps Lock toggles between US/RU layouts (`grp:caps_toggle`)
+- Caps Lock toggles US/RU layouts (`grp:caps_toggle`)
 
-### Applications
-- `Mod+T` — Terminal (Alacritty)
-- `Mod+D` — Application launcher (Fuzzel)
-- `Mod+Q` — Close window
-- `Mod+Shift+/` — Show hotkey overlay
+### Core Hotkeys
+| Shortcut | Action |
+|----------|--------|
+| Mod+T | Alacritty terminal |
+| Mod+D | Fuzzel launcher |
+| Mod+Q | Close window |
+| Mod+O | Overview |
+| Mod+Shift+E | Exit niri |
 
-### Workspaces
-- `Mod+U/PageDown` — Focus workspace down
-- `Mod+I/PageUp` — Focus workspace up
-- `Mod+Ctrl+U/I — Move column to workspace
+## Noctalia Integration
 
-### Screenshots
-- `Print` — Area screenshot
-- `Alt+Print` — Active window screenshot
-- `Ctrl+Print` — Full screen screenshot
+This config is designed for [Noctalia](https://github.com/noctalia-dev/noctalia) panel — a modern Wayland panel with Niri support.
 
-### Session
-- `Mod+Shift+E` or `Ctrl+Alt+Delete` — Exit niri
+**Autostart apps:**
+- `xwayland-satellite` — X11 compatibility layer
+- Panel of choice (Ironbar, Quickshell/Noctalia, Waybar)
 
 ## Screenshot
 
-![Niri setup](assets/niri-setup.png)
+![Niri + Noctalia setup](assets/niri-setup.png)
 
-*Clean workspace. See hotkeys below for monitor navigation.*
+*Workspace view. Dual-monitor hotkeys work with Noctalia panel.*
 
 ## Requirements
 
-- Niri Wayland compositor
-- Compatible panel (Ironbar, Waybar, Quickshell, Noctalia)
-- Fuzzel or similar launcher
-- Alacritty or preferred terminal
+- Niri Wayland compositor (v25+)
+- Noctalia-compatible panel (Ironbar, Quickshell, or custom)
+- Fuzzel (Wayland launcher)
+- Alacritty (or preferred terminal)
 
-## Related Notes
+## Related
 
-Full configuration history and troubleshooting: See [Niri Keyboard Shortcuts](niri-keyboard-shortcuts.md) in this repo for full reference
+- [Niri Keyboard Shortcuts](niri-keyboard-shortcuts.md) — complete reference
 
 ---
 *Last updated: 2026-06-26*
