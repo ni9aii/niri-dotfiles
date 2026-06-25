@@ -66,7 +66,7 @@ Then reload niri: `niri msg action load-config-file`
 
 ![Niri setup](assets/niri-setup.png)
 
-*Dual-monitor setup with minimal panel*
+*Clean workspace. See hotkeys below for monitor navigation.*
 
 ## Requirements
 
@@ -77,7 +77,7 @@ Then reload niri: `niri msg action load-config-file`
 
 ## Related Notes
 
-Full configuration history and troubleshooting: https://github.com/ni9aii/obsidian-vault/System/Niri%20-%20Рабочая%20конфигурация.md
+Full configuration history and troubleshooting: See [Niri Keyboard Shortcuts](niri-keyboard-shortcuts.md) in this repo for full reference
 
 ---
 *Last updated: 2026-06-26*
