@@ -55,8 +55,8 @@ Reload config: `niri msg action load-config-file`
 This config is designed for [Noctalia](https://github.com/noctalia-dev/noctalia) panel — a modern Wayland panel with Niri support.
 
 **Autostart apps:**
-- `xwayland-satellite` — X11 compatibility layer
-- Panel of choice (Ironbar, Quickshell/Noctalia, Waybar)
+- `noctalia-shell` — Noctalia panel
+- `kwalletd6` — KDE wallet daemon
 
 ## Screenshot
 
@@ -67,7 +67,7 @@ This config is designed for [Noctalia](https://github.com/noctalia-dev/noctalia)
 ## Requirements
 
 - Niri Wayland compositor (v25+)
-- Noctalia-compatible panel (Ironbar, Quickshell, or custom)
+- Noctalia panel (or compatible alternative)
 - Fuzzel (Wayland launcher)
 - Alacritty (or preferred terminal)
 
