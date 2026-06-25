@@ -16,7 +16,7 @@ Personal configuration files for **Niri** Wayland compositor.
 ## Installation
 
 ```bash
-git clone https://github.com/ni9aii/dotfiles ~/dotfiles
+git clone https://github.com/ni9aii/niri-dotfiles ~/dotfiles
 cd ~/dotfiles
 ./install.sh
 ```
