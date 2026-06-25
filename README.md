@@ -51,7 +51,7 @@ This config is designed for [Noctalia](https://github.com/noctalia-dev/noctalia)
 
 ![Niri + Noctalia setup](assets/niri-setup.png)
 
-*Workspace example with Noctalia panel. *
+*Workspace example with Noctalia panel.*
 
 ## Requirements
 
