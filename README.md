@@ -1,6 +1,6 @@
-# niri-dotfiles
+# niri dotfiles
 
-Niri + Noctalia dotfiles for Wayland.
+Personal Niri WM + Noctalia configuration dotfiles.
 
 ## Structure
 
@@ -30,18 +30,7 @@ ln -sf ~/dotfiles/niri/config.kdl ~/.config/niri/config.kdl
 
 Reload config: `niri msg action load-config-file`
 
-## Key Features
-
-### Monitor Navigation (Dual-Monitor)
-- `Mod+` (tilde) — focus next monitor
-- `Mod+Shift+` — focus previous monitor
-- `Mod+Ctrl+` — move window to next monitor
-- `Mod+Alt+` — move column to next monitor
-
-### Keyboard Layout
-- Caps Lock toggles US/RU layouts (`grp:caps_toggle`)
-
-### Core Hotkeys
+## Core Hotkeys
 | Shortcut | Action |
 |----------|--------|
 | Mod+T | Alacritty terminal |
@@ -62,7 +51,7 @@ This config is designed for [Noctalia](https://github.com/noctalia-dev/noctalia)
 
 ![Niri + Noctalia setup](assets/niri-setup.png)
 
-*Workspace with Noctalia panel. Dual-monitor hotkeys work seamlessly.*
+*Workspace example with Noctalia panel. *
 
 ## Requirements
 
