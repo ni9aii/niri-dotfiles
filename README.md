@@ -1,4 +1,6 @@
-# dotfiles
+# niri-dotfiles
+
+Personal configuration for Niri Wayland compositor.
 
 Personal configuration files for **Niri** Wayland compositor.
 
