@@ -1,12 +1,14 @@
 # dotfiles
 
-Personal configuration files for Arch Linux + Niri Wayland compositor.
+Personal configuration files for **Niri** Wayland compositor.
 
 ## Structure
 
 ```
 ├── niri/
 │   └── config.kdl    # Niri window manager configuration
+├── assets/
+│   └── niri-setup.png # Screenshot
 ├── install.sh        # Installation script (creates symlinks)
 └── README.md         # This file
 ```
@@ -21,6 +23,7 @@ cd ~/dotfiles
 
 Or symlink manually:
 ```bash
+mkdir -p ~/.config/niri
 ln -sf ~/dotfiles/niri/config.kdl ~/.config/niri/config.kdl
 ```
 
@@ -41,8 +44,8 @@ Then reload niri: `niri msg action load-config-file`
 - Caps Lock toggles between US/RU layouts (`grp:caps_toggle`)
 
 ### Applications
-- `Mod+T` — Alacritty terminal
-- `Mod+D` — Fuzzel application launcher
+- `Mod+T` — Terminal (Alacritty)
+- `Mod+D` — Application launcher (Fuzzel)
 - `Mod+Q` — Close window
 - `Mod+Shift+/` — Show hotkey overlay
 
@@ -59,25 +62,18 @@ Then reload niri: `niri msg action load-config-file`
 ### Session
 - `Mod+Shift+E` or `Ctrl+Alt+Delete` — Exit niri
 
-## System Overview
-
-**Environment:** ALT Linux p11 (Wayland + Niri)
-
-**Panel:** Ironbar (minimal setup with clock, CPU/RAM labels, tray)
-
-**Key packages:**
-- niri-25.08
-- ironbar-0.16.0
-- xwayland-satellite (X11 compatibility)
-- alacritty + zellij (terminal)
-- fuzzel (launcher)
-- wlsunset (night light)
-
 ## Screenshot
 
 ![Niri setup](assets/niri-setup.png)
 
-*Two-monitor setup with ironbar panel*
+*Dual-monitor setup with minimal panel*
+
+## Requirements
+
+- Niri Wayland compositor
+- Compatible panel (Ironbar, Waybar, Quickshell, Noctalia)
+- Fuzzel or similar launcher
+- Alacritty or preferred terminal
 
 ## Related Notes
 
